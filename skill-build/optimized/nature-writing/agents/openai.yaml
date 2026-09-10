@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nature Writing"
+  short_description: "Draft evidence-grounded scientific paper sections"
+  default_prompt: "Use $nature-writing to draft this scientific section from my supplied claims, evidence, and constraints."

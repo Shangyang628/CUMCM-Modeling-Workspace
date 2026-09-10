@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Code Experiment"
+  short_description: "Implement a selected route with reproducible experiments"
+  default_prompt: "Use $math-modeling-code-experiment to implement the selected route with a baseline, safe validation split, and reproducible outputs."

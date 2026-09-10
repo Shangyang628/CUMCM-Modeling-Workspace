@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Model Validator"
+  short_description: "Audit leakage, validity, ablation, and robustness"
+  default_prompt: "Use $math-modeling-model-validator to audit this implemented model and its executed artifacts with evidence-linked findings."

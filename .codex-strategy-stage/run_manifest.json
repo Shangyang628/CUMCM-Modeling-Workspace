@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2025-CUMCM-A-SmokeInterference",
+  "run_id": "strategy-design-20260903T000300+0800",
+  "parent_run_id": "decomposition-20260902T235021+0800",
+  "updated_at": "2026-09-03T00:03:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "stage": "strategy_design",
+  "status": "awaiting_route_decision",
+  "project_root": "D:\\MathModeling\\2025A\\_SmokeInterference",
+  "algorithm_started": false,
+  "route_selected": false,
+  "selected_route": null,
+  "candidate_routes": [
+    "ROUTE_A_ANALYTIC_EVENTS",
+    "ROUTE_B_ADAPTIVE_GEOMETRY_EVALUATION",
+    "ROUTE_C_TIME_EXPANDED_COVERAGE",
+    "ROUTE_D_REACHABILITY_ASSIGNMENT_HYBRID"
+  ],
+  "recommendation": {
+    "main": "ROUTE_D_REACHABILITY_ASSIGNMENT_HYBRID",
+    "fallback": "ROUTE_B_ADAPTIVE_GEOMETRY_EVALUATION",
+    "validation_roles": [
+      "ROUTE_A_ANALYTIC_EVENTS",
+      "ROUTE_C_TIME_EXPANDED_COVERAGE"
+    ],
+    "is_user_confirmed": false
+  },
+  "frozen_spec": "01_problem_analysis/FORMAL_PROBLEM_SPEC.md",
+  "strategy_outputs": [
+    "02_model_candidates/ROUTE_A.md",
+    "02_model_candidates/ROUTE_B.md",
+    "02_model_candidates/ROUTE_C.md",
+    "02_model_candidates/ROUTE_D.md",
+    "02_model_candidates/ROUTE_COMPARISON.md",
+    "02_model_candidates/RECOMMENDATION.md"
+  ],
+  "execution_gate": "closed_pending_user_route_confirmation",
+  "next_skill_after_selection": "math-modeling-code-experiment",
+  "minimum_next_deliverable": "optimizer-independent evaluator contract and Q1 verification only"
+}

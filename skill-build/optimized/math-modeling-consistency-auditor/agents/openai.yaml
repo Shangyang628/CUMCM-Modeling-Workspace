@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Consistency Auditor"
+  short_description: "Cross-check paper, code, results, and figures"
+  default_prompt: "Use $math-modeling-consistency-auditor to audit this final paper against the final code, configuration, tables, and figures."

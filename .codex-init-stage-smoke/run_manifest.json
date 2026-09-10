@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2025-CUMCM-A-SmokeInterference",
+  "run_id": "init-20260902T234132+0800",
+  "created_at": "2026-09-02T23:41:32+08:00",
+  "timezone": "Asia/Shanghai",
+  "stage": "intake",
+  "status": "initialized_no_experiment",
+  "project_root": "D:\\MathModeling\\2025A\\_SmokeInterference",
+  "algorithm_started": false,
+  "inputs": [
+    {
+      "id": "received_problem_screenshot",
+      "source_path": "D:\\weixin\\xwechat_files\\wxid_14uqb6rsj6il22_fe33\\temp\\RWTemp\\2026-09\\42a7492cf08253b6156775d2a3b7631c\\3f6cb8b4f662c51d15ad386ce458302c.jpg",
+      "archived_path": "00_problem/received/3f6cb8b4f662c51d15ad386ce458302c.jpg",
+      "size_bytes": 1409477,
+      "sha256": "20C355E6FE3DEF923EB6C90018F8D302A4AF772DC265B65E7E5F6C4A51933D80",
+      "classification": "received screenshot; not a verified complete official PDF",
+      "read_only": true
+    }
+  ],
+  "required_input_status": {
+    "complete_official_A_problem_pdf": "missing",
+    "result1_xlsx": "missing",
+    "result2_xlsx": "missing",
+    "result3_xlsx": "missing",
+    "other_official_attachments": "not_verified"
+  },
+  "input_policy": {
+    "official_problem_and_attachments": "read_only",
+    "official_excel_templates": "read_only",
+    "submission_outputs": "write only to copied workbooks under submission"
+  },
+  "environment": {
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "powershell": "7.6.4"
+  },
+  "next_skill": "math-modeling-problem-decomposer",
+  "next_deliverable": "source-traceable structural decomposition for Problems 1-5; no algorithm selection"
+}
+

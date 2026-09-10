@@ -1,0 +1,112 @@
+PROJECT_CONTEXT:
+  competition:
+    name: '高教社杯全国大学生数学建模竞赛'
+    year: '2026'
+    problem_id: 'A'
+    problem_title: '药材的烘干问题'
+    official_rules_file: 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\00_input_official\全国大学生数学建模竞赛论文格式规范（2026年修订稿）.pdf'
+    official_rules_sha256: 'CECE4BB3A900A0435160032B98EA26E03B0F2D7ECA58424B0D023E26085AED26'
+  project:
+    root: 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题'
+    source_archive: 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题.zip'
+    mode: '正式比赛'
+    current_stage: 'PROMPT_PACK_COMPILED'
+  goal:
+    primary: '完成全部4个问题，形成可复现代码、经验证结果、4个题目指定结果工作簿、LaTeX论文与支撑材料，冲击国家一等奖'
+    secondary: '至少形成完整、可信、可复现、可提交的国奖竞争方案'
+    quality_priority: '正确性 > 可验证性 > 题目匹配 > 完整性 > 创新性 > 表达'
+  team:
+    size: 3
+    shared_background: '电气工程及其自动化'
+    members:
+      A:
+        responsibilities:
+          - '题目整体拆解与建模路线讨论/选择'
+          - '关键假设、论文框架、数学推导与主要写作'
+          - '实验结果/结论整理及最终质量控制'
+        writing_ability: '4/5'
+        programming_ability: 'UNKNOWN'
+      B:
+        modeling_ability: '5/5'
+        python: '3/5'
+        matlab: '2/5'
+      C:
+        modeling_ability: 'UNKNOWN'
+        python: '4/5'
+        matlab: '3/5'
+    experience: '参加2025年上海大学数学建模竞赛“飞船登月舱软着陆”，获校级三等奖；具有拆题、关键假设、方法选择、模型优化和论文整合经验'
+    strengths: '成员A负责统筹与写作；成员B建模能力强；成员C Python实现能力较强；具备竞赛全流程经验'
+    weaknesses: '商业/专业求解器可用性未知；MATLAB能力为2/5至3/5；成员A编程能力与成员C建模能力未提供'
+  time:
+    total_remaining_hours: 72
+    internal_deadline: 'UNKNOWN'
+    official_deadline: '2026-09-13（具体时刻 UNKNOWN，时区按 Asia/Shanghai）'
+  inputs:
+    problem_files:
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\A题.pdf'
+    official_rules:
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\00_input_official\全国大学生数学建模竞赛论文格式规范（2026年修订稿）.pdf'
+    official_attachments:
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件1.xlsx'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件2.xlsx'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件3\result1.xlsx'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件3\result2.xlsx'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件3\result3.xlsx'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\附件\附件3\result4.xlsx'
+    non_official_references:
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\Codex_Prompts_Download\Codex_Modeling_Prompts_V2.md'
+      - 'C:\Users\LENOVO\OneDrive\文档\ChatGPT\数学建模\A题\01_sources\non_official\2026年数学建模竞赛论文模板.docx'
+  required_submission:
+    paper_authoring: 'LaTeX'
+    paper_format: 'PDF（官方允许PDF或Word，用户选择LaTeX生成PDF）'
+    paper_constraints:
+      - 'A4；上下左右页边距至少2.5 cm'
+      - '电子版第一页为摘要专用页，不含承诺书和编号专用页'
+      - '摘要含题目与关键词，原则上不超过1页，无需英文翻译'
+      - '从摘要页开始页脚中部阿拉伯数字连续编号，摘要页为1'
+      - '不要目录；正文不超过30页；附录页数不限'
+      - '电子论文为单独、未压缩文件，大小不超过20 MB'
+      - '摘要、正文、附录不得出现参赛者身份、学校或赛区信息'
+      - '论文附录列出支撑材料文件并包含全部完整可运行源代码'
+    result_files:
+      - 'result1.xlsx'
+      - 'result2.xlsx'
+      - 'result3.xlsx'
+      - 'result4.xlsx'
+    result_file_upload_channel: 'UNKNOWN（赛题要求生成，但提供的通用格式规范未说明单独上传还是放入支撑材料）'
+    support_materials: '单个ZIP或RAR文件，不超过20 MB；含全部可运行源程序、自主查阅数据和必要的大篇幅中间结果；不重复放赛题原始数据；不得含承诺书、编号页或身份信息'
+    ai_disclosure: 'UNKNOWN（提供的官方格式规范未提及；非官方DOCX中的AI声明/详情建议不得冒充官方要求）'
+  tools:
+    preferred_language: 'Python（主力）+ MATLAB（辅助/特定数值与工程计算）'
+    available_solvers: 'UNKNOWN；不假定Gurobi、CPLEX、SCIP等商业/专业求解器已安装'
+    method_library: '线性规划、回归、GA、PSO、DE、SA、CMA-ES、树模型及按题型选择的数值优化/统计/机器学习方法；仅为候选库，不代表路线已选'
+    development: 'VS Code、GitHub、Codex'
+    ai_tools: 'Codex/OpenAI官方模型；DeepSeek API；已建立切换环境'
+    internet_policy: '允许联网检索；优先权威来源；不得泄露账号、API密钥、队伍身份或未授权数据'
+    dependency_policy: '允许安装完成任务所需依赖；记录版本与安装原因'
+    skill_inventory_user_reported: 10
+    required_modeling_skills_verified: '8/8（手册列出的8项均发现）'
+  permissions:
+    raw_inputs: 'READ_ONLY'
+    create_project_files: true
+    modify_existing_work: '仅在阶段Prompt明确授权后'
+    delete_files: false
+  language:
+    analysis: '中文'
+    paper: '中文，LaTeX排版'
+    code_comments: '中文或英文，以可读和可复现为准'
+  preferences:
+    explicit_skill_calls: true
+    preserve_failed_runs: true
+    ask_only_material_questions: true
+    prohibit_single_route_only: true
+    workflow: '问题拆解 → 数据审计 → 多路线候选 → baseline → 方法筛选 → 代码实现 → 结果验证 → 消融 → 敏感性 → 稳健性 → 失败诊断 → 独立重算 → 论文撰写 → 一致性审计 → 最终提交审计'
+  compiler_verified:
+    verified_at: '2026-09-10 Asia/Shanghai'
+    question_count: 4
+    official_general_format_rules_present: true
+    supplied_docx_classification: 'NON_OFFICIAL_REFERENCE'
+    supplied_docx_rendered_pages: 86
+    supplied_docx_contains_tracked_insertions: 686
+    source_authenticity_against_official_website: 'NOT VERIFIED'
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Methodology Writer"
+  short_description: "Write model establishment from final code and design"
+  default_prompt: "Use $math-modeling-methodology-writer to write the model-establishment section from the final code and configuration, without results."

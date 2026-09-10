@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanizer ZH"
+  short_description: "Polish academic Chinese without changing facts"
+  default_prompt: "Use $humanizer-zh to polish this academic text while preserving every number, formula, citation, and conclusion."

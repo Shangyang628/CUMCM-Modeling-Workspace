@@ -1,0 +1,8 @@
+item_id,expected_name,status,source_path,archived_path,size_bytes,sha256,classification
+received_problem_screenshot,3f6cb8b4f662c51d15ad386ce458302c.jpg,verified_present,"D:\weixin\xwechat_files\wxid_14uqb6rsj6il22_fe33\temp\RWTemp\2026-09\42a7492cf08253b6156775d2a3b7631c\3f6cb8b4f662c51d15ad386ce458302c.jpg",00_problem/received/3f6cb8b4f662c51d15ad386ce458302c.jpg,1409477,20C355E6FE3DEF923EB6C90018F8D302A4AF772DC265B65E7E5F6C4A51933D80,received screenshot; not official PDF
+official_problem_pdf,A题.pdf,missing,,,,,required official input
+official_template_q3,result1.xlsx,missing,,,,,required official template
+official_template_q4,result2.xlsx,missing,,,,,required official template
+official_template_q5,result3.xlsx,missing,,,,,required official template
+other_official_attachments,unspecified,not_verified,,,,,official release package not supplied
+

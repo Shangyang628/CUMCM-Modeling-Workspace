@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2025-CUMCM-A-SmokeInterference",
+  "run_id": "decomposition-20260902T235021+0800",
+  "parent_run_id": "init-20260902T234132+0800",
+  "updated_at": "2026-09-02T23:50:21+08:00",
+  "timezone": "Asia/Shanghai",
+  "stage": "problem_decomposition",
+  "status": "complete_ready_for_strategy_design",
+  "project_root": "D:\\MathModeling\\2025A\\_SmokeInterference",
+  "algorithm_started": false,
+  "route_selected": false,
+  "official_release_source": "https://dxs.moe.gov.cn/zx/a/hd_sxjm_sthb/250512/2005795.shtml",
+  "inputs": [
+    {
+      "path": "00_problem/official/2025_CUMCM_Chinese_Problems.zip",
+      "size_bytes": 52097165,
+      "sha256": "CEF6262C24EE3017BDAB4CA255299C7B47B2700AD89FD773ADDDE7E241E7E4DE",
+      "read_only": true
+    },
+    {
+      "path": "00_problem/official/A题.pdf",
+      "size_bytes": 286520,
+      "sha256": "A37F6AAD30B16EA09DA9CB320CE194B12D3A28874008CF9FF19549F6C6079447",
+      "read_only": true
+    },
+    {
+      "path": "02_data_raw/official_templates/result1.xlsx",
+      "size_bytes": 10316,
+      "sha256": "AF04B16E6A4719628971BCF5A03D230C9DA6738E67EEBAC9276D254FDD4DF1A7",
+      "read_only": true
+    },
+    {
+      "path": "02_data_raw/official_templates/result2.xlsx",
+      "size_bytes": 10438,
+      "sha256": "C681D5E378538F71C77FCA199A3CA8303A04DBCFC7BD95F870AE22F01AB69F91",
+      "read_only": true
+    },
+    {
+      "path": "02_data_raw/official_templates/result3.xlsx",
+      "size_bytes": 9763,
+      "sha256": "B648C82D63E459BA6E6B3711AE79875E373521CD543B45571C4D8FF1AD5EC54A",
+      "read_only": true
+    }
+  ],
+  "decomposition_outputs": [
+    "01_problem_analysis/FORMAL_PROBLEM_SPEC.md",
+    "01_problem_analysis/VARIABLES_AND_CONSTRAINTS.md",
+    "01_problem_analysis/GEOMETRY_DEFINITION.md",
+    "01_problem_analysis/QUESTION_DEPENDENCY_MAP.md"
+  ],
+  "modeling_contract": {
+    "main_geometry": "full visible-cylinder line-of-sight occlusion",
+    "baseline_geometry": "geometric-center point line-of-sight occlusion",
+    "same_missile_time_aggregation": "interval union",
+    "q5_primary_aggregation": "sum of missile-specific union durations",
+    "provisional_gravity_m_s2": 9.8
+  },
+  "next_skill": "math-modeling-strategy-designer",
+  "next_deliverable": "candidate-route scorecard and explicit route decision; no implementation before the route gate"
+}

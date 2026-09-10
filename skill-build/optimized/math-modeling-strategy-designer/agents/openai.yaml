@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Strategy Designer"
+  short_description: "Compare distinct routes and control model complexity"
+  default_prompt: "Use $math-modeling-strategy-designer to compare several distinct modeling routes for this decomposed subproblem."

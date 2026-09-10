@@ -1,0 +1,102 @@
+version: 1
+cases:
+  - id: orchestrator-positive
+    prompt: "这是完整赛题和附件，请建立比赛目录并组织从分析到提交的全流程。"
+    expect: "math-modeling-orchestrator"
+  - id: orchestrator-negative
+    prompt: "路线 B 已确定，请只实现 Q2 的代码。"
+    expect: "math-modeling-code-experiment"
+  - id: orchestrator-boundary
+    prompt: "我们做到一半了，请检查现有目录并告诉我下一阶段。"
+    expect: "math-modeling-orchestrator"
+
+  - id: decomposer-positive
+    prompt: "这是一道数学建模题，先不要建模，帮我分析题目。"
+    expect: "math-modeling-problem-decomposer"
+  - id: decomposer-negative
+    prompt: "第二问已经拆解完成，比较几种不同建模路线。"
+    expect: "math-modeling-strategy-designer"
+  - id: decomposer-boundary
+    prompt: "先审计附件字段、单位、时间范围和各问依赖，不要推荐算法。"
+    expect: "math-modeling-problem-decomposer"
+
+  - id: strategy-positive
+    prompt: "第二问已经拆解完成，比较几种不同建模路线。"
+    expect: "math-modeling-strategy-designer"
+  - id: strategy-negative
+    prompt: "我们已经确定采用路线 B，现在开始正式实现。"
+    expect: "math-modeling-code-experiment"
+  - id: strategy-boundary
+    prompt: "评价问题结构已明确，但不想默认熵权 TOPSIS，请比较机制、统计和优化路线。"
+    expect: "math-modeling-strategy-designer"
+
+  - id: experiment-positive
+    prompt: "我们已经确定采用路线 B，现在开始正式实现。"
+    expect: "math-modeling-code-experiment"
+  - id: experiment-negative
+    prompt: "我还没想清楚问题是什么，直接随便选个高级模型写代码。"
+    expect: "math-modeling-problem-decomposer"
+  - id: experiment-boundary
+    prompt: "实现已选定的 ARDL 加残差修正路线，并做 baseline 和消融。"
+    expect: "math-modeling-code-experiment"
+
+  - id: validator-positive
+    prompt: "代码和输出都已生成，请检查泄漏、消融、敏感性和稳健性。"
+    expect: "math-modeling-model-validator"
+  - id: validator-negative
+    prompt: "根据最终 Excel 和图片写模型求解。"
+    expect: "math-modeling-solution-writer"
+  - id: validator-boundary
+    prompt: "代码尚未运行，先做静态泄漏审计并把执行项标为未验证。"
+    expect: "math-modeling-model-validator"
+
+  - id: methodology-positive
+    prompt: "实验已经完成，帮我写模型建立，只写公式、变量和算法流程。"
+    expect: "math-modeling-methodology-writer"
+  - id: methodology-negative
+    prompt: "根据最终 Excel 写预测数值和误差分析。"
+    expect: "math-modeling-solution-writer"
+  - id: methodology-boundary
+    prompt: "最终模型和配置已定，但结果表还没核验，先写不含结果的模型建立。"
+    expect: "math-modeling-methodology-writer"
+
+  - id: solution-positive
+    prompt: "根据最终 Excel、日志和图片写模型求解与结果分析。"
+    expect: "math-modeling-solution-writer"
+  - id: solution-negative
+    prompt: "只写目标函数、约束和参数估计方法，不要写结果。"
+    expect: "math-modeling-methodology-writer"
+  - id: solution-boundary
+    prompt: "只有代码没有输出，请写带具体 RMSE 的求解章节。"
+    expect: "math-modeling-solution-writer"
+    expected_behavior: "refuse invented numbers and return NOT READY"
+
+  - id: consistency-positive
+    prompt: "论文准备提交，检查代码、结果、公式和论文是否一致。"
+    expect: "math-modeling-consistency-auditor"
+  - id: consistency-negative
+    prompt: "结果已验证，请根据工作簿撰写求解章节。"
+    expect: "math-modeling-solution-writer"
+  - id: consistency-boundary
+    prompt: "论文有一版、结果有两版，请定位冲突，不要自行改文件。"
+    expect: "math-modeling-consistency-auditor"
+
+  - id: nature-positive
+    prompt: "根据这些真实结果和限制帮我重构 SCI 论文讨论部分。"
+    expect: "nature-writing"
+  - id: nature-negative
+    prompt: "根据最终模型代码写数学建模的模型建立。"
+    expect: "math-modeling-methodology-writer"
+  - id: nature-boundary
+    prompt: "只有研究思路没有结果，先起草引言并标出证据缺口。"
+    expect: "nature-writing"
+
+  - id: humanizer-positive
+    prompt: "这段中文论文已经写好，请去掉套话但一项数字也不要改。"
+    expect: "humanizer-zh"
+  - id: humanizer-negative
+    prompt: "从零设计第二问的数学模型。"
+    expect: "math-modeling-strategy-designer"
+  - id: humanizer-boundary
+    prompt: "润色求解章节，但保留负 R²、公式、参数和结论。"
+    expect: "humanizer-zh"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Problem Decomposer"
+  short_description: "Structure the problem before choosing any model"
+  default_prompt: "Use $math-modeling-problem-decomposer to analyze this contest problem without selecting an algorithm yet."

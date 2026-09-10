@@ -1,0 +1,91 @@
+﻿# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ==============================
+# MATLAB
+# ==============================
+*.asv
+*.m~
+slprj/
+codegen/
+*.mexw64
+
+# ==============================
+# LaTeX temporary files
+# ==============================
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# ==============================
+# IDE temporary files
+# ==============================
+.vs/
+.idea/
+
+# ==============================
+# Windows / Office
+# ==============================
+Thumbs.db
+Desktop.ini
+~$*
+
+# ==============================
+# Temporary folders
+# ==============================
+.cache/
+tmp/
+temp/
+
+# ==============================
+# Secrets - NEVER commit
+# ==============================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.*
+credentials.*
+
+# ==============================
+# Codex / authentication secrets
+# ==============================
+auth.json
+*token*
+
+# Large media / archives
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.7z
+*.rar
+
+# Codex temporary downloads
+.codex-downloads/
+
+# Re-creatable test dependencies
+skill-build/test-deps/
+
+# Re-creatable test dependencies
+skill-build/test-deps/

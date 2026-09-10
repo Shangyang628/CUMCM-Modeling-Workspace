@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Orchestrator"
+  short_description: "Coordinate stages, gates, and modeling decisions"
+  default_prompt: "Use $math-modeling-orchestrator to inspect this competition project, identify the current stage, and coordinate the next modeling step."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Modeling Solution Writer"
+  short_description: "Write verified solution results from final artifacts"
+  default_prompt: "Use $math-modeling-solution-writer to write the solution chapter from the final executed workbooks, logs, figures, and code."
